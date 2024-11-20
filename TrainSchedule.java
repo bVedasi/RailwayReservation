@@ -239,7 +239,7 @@ public class TrainSchedule extends javax.swing.JFrame {
     private void loadTrainScheduleData() {
         String url = "jdbc:mysql://localhost:3306/mysql?zeroDateTimeBehavior=CONVERT_TO_NULL"; 
         String user = "root"; 
-        String password = "vedasi@0703"; 
+        String password = "password"; 
         String query = "SELECT * FROM TrainSchedule";
 
         try (Connection conn = DriverManager.getConnection(url, user, password);
