@@ -44,7 +44,7 @@ public class Profile extends javax.swing.JFrame {
 
         String url = "jdbc:mysql://localhost:3306/mysql?zeroDateTimeBehavior=CONVERT_TO_NULL";
         String dbUsername = "root";
-        String dbPassword = "vedasi@0703";  
+        String dbPassword = "password";  
 
         String query = "SELECT * FROM passenger WHERE PassengerID = ?";
 
