@@ -326,7 +326,7 @@ public class SignUp extends javax.swing.JFrame {
     private void SubmitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SubmitMouseClicked
         // TODO add your handling code here:
         try{
-            Connect1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql?zeroDateTimeBehavior=CONVERT_TO_NULL", "root", "vedasi@0703");
+            Connect1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql?zeroDateTimeBehavior=CONVERT_TO_NULL", "root", "password");
             PreparedStatement Add=Connect1.prepareStatement("insert into passenger (Name,Age,Gender,Contact,Email,Password) VALUES(?,?,?,?,?,?)");
 //            Add.setInt(1,101);
             Add.setString(1,Name.getText());
